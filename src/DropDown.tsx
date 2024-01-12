@@ -231,7 +231,7 @@ const DropDown = forwardRef<TouchableWithoutFeedback, DropDownPropsInterface>(
                   )}
                 </Fragment>
               </TouchableRipple>
-              <Divider />
+              {_index == list.length - 1 ? null : <Divider />}
             </Fragment>
           ))}
         </ScrollView>
